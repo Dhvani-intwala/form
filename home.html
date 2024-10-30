@@ -42,195 +42,157 @@
             </div>
         </div>
     </nav>
-    <div class="form-group">
+
+
+    <div class="container mt-5">
         <form method="post">
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <td><input type="date" name="date" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Borrower Name</th>
-                    <td><input type="text" name="borrowerName" placeholder="Borrower Name" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Property Address</th>
-                    <td><input type="text" name="propertyAddress" placeholder="Property Address" class="form-control"></td>
-                </tr>
-                <!-- Refinance Quote Section -->
-                <tr>
-                    <th>Property Value</th>
-                    <td><input type="text" name="propertyValue" placeholder="Property Value" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Current Loan Balance</th>
-                    <td><input type="text" name="loanBalance" placeholder="Current Loan Balance" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Cash Out</th>
-                    <td><input type="text" name="cashOut" placeholder="Cash Out" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Interest Rate</th>
-                    <td><input type="text" name="interestRate" placeholder="5.500%" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Estimated Closing Costs</th>
-                    <td><input type="text" name="closingCosts" placeholder="$3,850.45" class="form-control"></td>
-                </tr>
-                <tr>
-                    <th>Loan Type</th>
-                    <td><input type="text" name="loanType" placeholder="30 Year Fixed - Conv" class="form-control"></td>
-                </tr>
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" name="date" class="form-control" id="date">
+                    </div>
+                    <div class="mb-3">
+                        <label for="borrowerName" class="form-label">Borrower Name</label>
+                        <input type="text" name="borrowerName" placeholder="Borrower Name" class="form-control" id="borrowerName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="propertyAddress" class="form-label">Property Address</label>
+                        <input type="text" name="propertyAddress" placeholder="Property Address" class="form-control" id="propertyAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="propertyValue" class="form-label">Property Value</label>
+                        <input type="text" name="propertyValue" placeholder="Property Value" class="form-control" id="propertyValue">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loanBalance" class="form-label">Current Loan Balance</label>
+                        <input type="text" name="loanBalance" placeholder="Current Loan Balance" class="form-control" id="loanBalance">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cashOut" class="form-label">Cash Out</label>
+                        <input type="text" name="cashOut" placeholder="Cash Out" class="form-control" id="cashOut">
+                    </div>
+                    <!-- Closing Cost Details -->
+                    <!-- Origination Charges -->
+                    <!-- Broker Fee -->
+                    <!-- Points  -->
+                    <div class="mb-3">
+                        <label for="points" class="form-label">Closing Cost Details*</label><br>
+                        <label for="points" class="form-label"> Origination Charges $1,196.25</label><br>
+                        <label for="points" class="form-label"> Broker Fee (0.000% of Loan Amount)</label><br>
+                        <label for="points" class="form-label"> Points (0.000% of Loan Amount)</label>
+                        <input type="text" name="points" placeholder="$0.00" class="form-control">
+                    </div>
+                    <!-- Title & Closing Fees -->
+                    <!-- Title - Loan Policy & Insurance -->
+                    <div class="mb-3">
+                        <label for="loanPolicyInsurance" class="form-label">Title & Closing Fees $2,374.00</label><br>
+                        <label for="loanPolicyInsurance" class="form-label">Title - Loan Policy & Insurance</label>
+                        <input type="text" name="loanPolicyInsurance" placeholder="$1,331.00" class="form-control">
+                    </div>
+                    <!-- Title - Recording -->
+                    <div class="mb-3">
+                        <label for="titleRecording" class="form-label">Title - Recording</label>
+                        <input type="text" name="titleRecording" placeholder="$198.00" class="form-control">
+                    </div>
+                    <!-- Prepaid Interest -->
+                    <div class="mb-3">
+                        <label for="prepaidInterest" class="form-label">Prepaid Interest ($56.04 x 5 Days)</label>
+                        <input type="text" name="prepaidInterest" placeholder="$280.20" class="form-control">
+                    </div>
+                    <!-- Other Costs -->
+                     <!-- Appraisal -->
+                    <div class="mb-3">
+                        <label for="appraisal" class="form-label">Other Costs $0.00</label><br>
+                        <label for="appraisal" class="form-label">Appraisal (Upfront Deposit Required)</label>
+                        <input type="text" name="appraisal" placeholder="$0.00" class="form-control">
+                    </div>
+                    <!-- Miscellaneous -->
+                    <div class="mb-3">
+                        <label for="miscellaneous" class="form-label">Miscellaneous</label>
+                        <input type="text" name="miscellaneous" placeholder="$0.00" class="form-control"> 
+                    </div>
 
-                <!-- New Loan Amount -->
-                <tr class="">
-                    <th>New Loan Amount</th>
-                    <td><input type="text" name="newLoanAmount" placeholder="$371,850.45" class="form-control"></td>
-                </tr>
 
-                <!-- Principal & Interest -->
-                <tr class="">
-                    <th>Principal & Interest</th>
-                    <td><input type="text" name="monthlyPayment" placeholder="$2,111.49" class="form-control"></td>
-                </tr>
+                    
+                </div>
 
-                <!-- Total Estimated Payment -->
-                <tr class="">
-                    <th>Total Estimated Payment</th>
-                    <td><input type="text" name="totalEstimatedPayment" placeholder="$2,111.49" class="form-control"></td>
-                </tr>
+                <!-- Second Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="interestRate" class="form-label">Interest Rate</label>
+                        <input type="text" name="interestRate" placeholder="5.500%" class="form-control" id="interestRate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="closingCosts" class="form-label">Estimated Closing Costs</label>
+                        <input type="text" name="closingCosts" placeholder="$3,850.45" class="form-control" id="closingCosts">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loanType" class="form-label">Loan Type</label>
+                        <input type="text" name="loanType" placeholder="30 Year Fixed - Conv" class="form-control" id="loanType">
+                    </div>
+                    <!-- New Loan Amount -->
+                    <div class="mb-3">
+                        <label for="newLoanAmount" class="form-label">New Loan Amount</label>
+                        <input type="text" name="newLoanAmount" placeholder="$371,850.45" class="form-control" id="newLoanAmount">
+                    </div>
+                    <!-- Principal & Interest -->
+                    <div class="mb-3">
+                        <label for="monthlyPayment" class="form-label">Principal & Interest</label>
+                        <input type="text" name="monthlyPayment" placeholder="$2,111.49" class="form-control" id="monthlyPayment">
+                    </div>
+                    <!-- Total Estimated Payment -->
+                    <div class="mb-3">
+                        <label for="totalEstimatedPayment" class="form-label">Total Estimated Payment</label>
+                        <input type="text" name="totalEstimatedPayment" placeholder="$2,111.49" class="form-control" id="totalEstimatedPayment">
+                    </div>
+                    <!-- Underwriting Fee -->
+                    <div class="mb-3">
+                        <label for="underwritingFee" class="form-label">Unterwriting fee</label>
+                        <input type="text" name="underwritingFee" placeholder="$1,196.25" class="form-control">
+                    </div>
+                    <!-- Title - Settlement -->
+                    <div class="mb-3">
+                        <label for="Settlement" class="form-label">Title - Settlement</label>
+                        <input type="text" name="titleSettlement" placeholder="$250.00" class="form-control">
+                    </div>
+                    <!-- Processing Fee -->
+                    <div class="mb-3">
+                        <label for="ProcessingFee" class="form-label">Processing Fee</label>
+                        <input type="text" name="processingFee" placeholder="$595.00" class="form-control"> 
+                    </div>
+                    <!-- Credit Report -->
+                    <div class="mb-3">
+                        <label for="creditReport" class="form-label">Credit Report</label>
+                        <input type="text" name="creditReport" placeholder="$0.00" class="form-control"> 
+                    </div>
+                    <!-- Prepaids -->
+                    <!-- Prepaid Taxes -->
+                    <div class="mb-3">
+                        <label for="prepaidTaxes" class="form-label">Prepaids $280.20</label><br>
+                        <label for="prepaidTaxes" class="form-label">Prepaid Taxes ($0.00 x 1 Month)</label>
+                        <input type="text" name="prepaidTaxes" placeholder="$0.00" class="form-control"> 
+                    </div>
+                    <!-- Prepaid Insurance -->
+                    <div class="mb-3">
+                        <label for="prepaidInsurance" class="form-label">Prepaid Insurance ($0.00 x 1 Month)</label>
+                        <input type="text" name="prepaidInsurance" placeholder="$0.00" class="form-control">
+                    </div>
+                   
 
-                <!-- Closing Cost Details -->
-                <!-- Origination Charges -->
-                <tr class="highlight">
-                    <th colspan="2">Closing Cost Details*</th>
-                </tr>
+                    
+                </div>
+            </div>
 
-                <!-- Origination Charges -->
-                <tr class="highlight">
-                    <th colspan="2">Origination Charges $1,196.25</th>
-                </tr>
-
-                <!-- Broker Fee -->
-                <tr>
-                    <th>Broker Fee (0.000% of Loan Amount)</th>
-                </tr>
-
-                <!-- Points -->
-                <tr>
-                    <th>Points (0.000% of Loan Amount)</th>
-                    <td><input type="text" name="points" placeholder="$0.00" class="form-control"> </td>
-                </tr>
-
-                <!-- Underwriting Fee -->
-                <tr>
-                    <th>Underwriting Fee</th>
-                    <td><input type="text" name="underwritingFee" placeholder="$1,196.25" class="form-control"> </td>
-                </tr>
-
-                <!-- Title & Closing Fees -->
-                <tr class="highlight">
-                    <th colspan="2">Title & Closing Fees $2,374.00</th>
-                </tr>
-
-                <!-- Title - Loan Policy & Insurance -->
-                <tr>
-                    <th>Title - Loan Policy & Insurance</th>
-                    <td><input type="text" name="loanPolicyInsurance" placeholder="$1,331.00" class="form-control"> </td>
-                </tr>
-
-                <!-- Title - Settlement -->
-                <tr>
-                    <th>Title - Settlement</th>
-                    <td><input type="text" name="titleSettlement" placeholder="$250.00" class="form-control"> </td>
-                </tr>
-
-                <!-- Title - Recording -->
-                <tr>
-                    <th>Title - Recording</th>
-                    <td><input type="text" name="titleRecording" placeholder="$198.00" class="form-control"> </td>
-                </tr>
-
-                <!-- Processing Fee -->
-                <tr>
-                    <th>Processing Fee</th>
-                    <td><input type="text" name="processingFee" placeholder="$595.00" class="form-control"> </td>
-                </tr>
-
-                <!-- Credit Report -->
-                <tr>
-                    <th>Credit Report</th>
-                    <td><input type="text" name="creditReport" placeholder="$0.00" class="form-control"> </td>
-                </tr>
-
-                <!-- Prepaids -->
-
-                <tr class="highlight">
-
-                    <th colspan="2">Prepaids $280.20</th>
-
-                </tr>
-
-                <!-- Prepaid Taxes -->
-
-                <tr>
-
-                    <th>Prepaid Taxes ($0.00 x 1 Month)</th>
-
-                    <td><input type="text" name="prepaidTaxes" placeholder="$0.00" class="form-control"> </td>
-
-                </tr>
-
-                <!-- Prepaid Insurance -->
-
-                <tr>
-
-                    <th>Prepaid Insurance ($0.00 x 1 Month)</th>
-
-                    <td><input type="text" name="prepaidInsurance" placeholder="$0.00" class="form-control"> </td>
-
-                </tr>
-
-                <!-- Prepaid Interest -->
-
-                <tr>
-
-                    <th>Prepaid Interest ($56.04 x 5 Days)</th>
-
-                    <td><input type="text" name="prepaidInterest" placeholder="$280.20" class="form-control"> </td>
-
-                </tr>
-
-                <!-- Other Costs -->
-
-                <tr class="highlight">
-
-                    <th colspan="2">Other Costs $0.00</th>
-
-                </tr>
-
-                <!-- Appraisal -->
-
-                <tr>
-
-                    <th>Appraisal (Upfront Deposit Required)</th>
-
-                    <td><input type="text" name="appraisal" placeholder="$0.00" class="form-control"> </td>
-
-                </tr>
-
-                <!-- Miscellaneous -->
-
-                <tr>
-
-                    <th>Miscellaneous</th>
-
-                    <td><input type="text" name="miscellaneous" placeholder="$0.00" class="form-control"> </td>
-                </tr>
-            </table>
-            <input type="submit" value="Submit">
+            <div class="row">
+                <div class="col-12 text-center mb-5 mt-2">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
         </form>
+    </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
