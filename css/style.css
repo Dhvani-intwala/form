@@ -57,3 +57,12 @@ body{
     font-style: italic; 
 }
 
+p {
+    margin: 0;          
+    padding: 0;         
+    white-space: nowrap; 
+}
+
+p::after {
+    content: ""; /* This removes any trailing characters or whitespace after the text */
+}
