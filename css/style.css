@@ -66,3 +66,87 @@ p {
 p::after {
     content: ""; /* This removes any trailing characters or whitespace after the text */
 }
+
+
+/* General styles */
+.container {
+    max-width: 100%;
+}
+
+/* For screens 992px and below (Tablets and smaller desktops) */
+@media (max-width: 992px) {
+    .col-md-4, .col-md-6 {
+        width: 100%;
+    }
+
+    /* Stack the main sections vertically */
+    .row.float-start,
+    .row.float-end {
+        width: 100%;
+        float: none;
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens 768px and below (Tablets in portrait mode) */
+@media (max-width: 768px) {
+    .col-sm-8, .col-sm-6, .col-sm-4 {
+        width: 100%;
+    }
+
+    .krish_lending_logo {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .about {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+
+    .container p {
+        font-size: 0.95rem;
+        padding-left: 0.5rem;
+    }
+}
+
+/* For screens 576px and below (Large smartphones) */
+@media (max-width: 576px) {
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    /* Increase padding and margins to prevent text from looking cramped */
+    .col-sm-8, .col-sm-4 {
+        padding: 0.5rem;
+    }
+
+    .row.gx-0.gy-0 {
+        gap: 0.5rem;
+    }
+
+    .about {
+        padding: 0 0.5rem;
+    }
+}
+
+/* For screens 480px and below (Small smartphones) */
+@media (max-width: 480px) {
+    /* Make text smaller and reduce padding */
+    .container p {
+        font-size: 0.85rem;
+        margin: 0.3rem;
+    }
+
+    .krish_lending_logo {
+        max-width: 60%;
+    }
+
+    .borders {
+        padding: 0.3rem;
+    }
+}
