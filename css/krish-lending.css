@@ -37,17 +37,13 @@ body {
 
 @media (max-width: 576px) {
     .address{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+       
     }
     .krish_lending_logo {
-        width: 80%;
-        height: 80%;
+        width: 50%;
+        height: 50%;
         margin: 0 auto;
-    }
-
-   
+    }   
 }
 
 
