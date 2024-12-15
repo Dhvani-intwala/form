@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+body {
+    color: black;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/* krish_lending_logo */
+
+.krish_lending_logo{
+    width: 18vw;
+    height: 8vw;
+    text-align: left;
+}
+
+.fs-6{
+    font-size: 6px;
+}
+
+.about p{
+    margin-top: 20%;
+    font-size: 10px;
+}
+
+.borders {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    padding: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .address{
+       
+    }
+    .krish_lending_logo {
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }   
+}
+
+
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (min-width: 1201px) {
+    
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krish lending LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Loan Quote Form</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Krish Lending LLC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <form method="post">
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" name="date" class="form-control" id="date">
+                    </div>
+                    <div class="mb-3">
+                        <label for="borrowerName" class="form-label">Borrower Name</label>
+                        <input type="text" name="borrowerName" placeholder="Borrower Name" class="form-control" id="borrowerName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="propertyAddress" class="form-label">Property Address</label>
+                        <input type="text" name="propertyAddress" placeholder="Property Address" class="form-control" id="propertyAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="propertyValue" class="form-label">Property Value</label>
+                        <input type="text" name="propertyValue" placeholder="Property Value" class="form-control" id="propertyValue">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loanBalance" class="form-label">Current Loan Balance</label>
+                        <input type="text" name="loanBalance" placeholder="Current Loan Balance" class="form-control" id="loanBalance">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cashOut" class="form-label">Cash Out</label>
+                        <input type="text" name="cashOut" placeholder="Cash Out" class="form-control" id="cashOut">
+                    </div>
+                    <!-- Closing Cost Details -->
+                    <!-- Origination Charges -->
+                    <!-- Broker Fee -->
+                    <!-- Points  -->
+                    <div class="mb-3">
+                        <label for="points" class="form-label">Closing Cost Details*</label><br>
+                        <label for="points" class="form-label"> Origination Charges $1,196.25</label><br>
+                        <label for="points" class="form-label"> Broker Fee (0.000% of Loan Amount)</label><br>
+                        <label for="points" class="form-label"> Points (0.000% of Loan Amount)</label>
+                        <input type="text" name="points" placeholder="$0.00" class="form-control">
+                    </div>
+                    <!-- Title & Closing Fees -->
+                    <!-- Title - Loan Policy & Insurance -->
+                    <div class="mb-3">
+                        <label for="loanPolicyInsurance" class="form-label">Title & Closing Fees $2,374.00</label><br>
+                        <label for="loanPolicyInsurance" class="form-label">Title - Loan Policy & Insurance</label>
+                        <input type="text" name="loanPolicyInsurance" placeholder="$1,331.00" class="form-control">
+                    </div>
+                    <!-- Title - Recording -->
+                    <div class="mb-3">
+                        <label for="titleRecording" class="form-label">Title - Recording</label>
+                        <input type="text" name="titleRecording" placeholder="$198.00" class="form-control">
+                    </div>
+                    <!-- Prepaid Interest -->
+                    <div class="mb-3">
+                        <label for="prepaidInterest" class="form-label">Prepaid Interest ($56.04 x 5 Days)</label>
+                        <input type="text" name="prepaidInterest" placeholder="$280.20" class="form-control">
+                    </div>
+                    <!-- Other Costs -->
+                     <!-- Appraisal -->
+                    <div class="mb-3">
+                        <label for="appraisal" class="form-label">Other Costs $0.00</label><br>
+                        <label for="appraisal" class="form-label">Appraisal (Upfront Deposit Required)</label>
+                        <input type="text" name="appraisal" placeholder="$0.00" class="form-control">
+                    </div>
+                    <!-- Miscellaneous -->
+                    <div class="mb-3">
+                        <label for="miscellaneous" class="form-label">Miscellaneous</label>
+                        <input type="text" name="miscellaneous" placeholder="$0.00" class="form-control"> 
+                    </div>
+
+
+                    
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="interestRate" class="form-label">Interest Rate</label>
+                        <input type="text" name="interestRate" placeholder="5.500%" class="form-control" id="interestRate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="closingCosts" class="form-label">Estimated Closing Costs</label>
+                        <input type="text" name="closingCosts" placeholder="$3,850.45" class="form-control" id="closingCosts">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loanType" class="form-label">Loan Type</label>
+                        <input type="text" name="loanType" placeholder="30 Year Fixed - Conv" class="form-control" id="loanType">
+                    </div>
+                    <!-- New Loan Amount -->
+                    <div class="mb-3">
+                        <label for="newLoanAmount" class="form-label">New Loan Amount</label>
+                        <input type="text" name="newLoanAmount" placeholder="$371,850.45" class="form-control" id="newLoanAmount">
+                    </div>
+                    <!-- Principal & Interest -->
+                    <div class="mb-3">
+                        <label for="monthlyPayment" class="form-label">Principal & Interest</label>
+                        <input type="text" name="monthlyPayment" placeholder="$2,111.49" class="form-control" id="monthlyPayment">
+                    </div>
+                    <!-- Total Estimated Payment -->
+                    <div class="mb-3">
+                        <label for="totalEstimatedPayment" class="form-label">Total Estimated Payment</label>
+                        <input type="text" name="totalEstimatedPayment" placeholder="$2,111.49" class="form-control" id="totalEstimatedPayment">
+                    </div>
+                    <!-- Underwriting Fee -->
+                    <div class="mb-3">
+                        <label for="underwritingFee" class="form-label">Unterwriting fee</label>
+                        <input type="text" name="underwritingFee" placeholder="$1,196.25" class="form-control">
+                    </div>
+                    <!-- Title - Settlement -->
+                    <div class="mb-3">
+                        <label for="Settlement" class="form-label">Title - Settlement</label>
+                        <input type="text" name="titleSettlement" placeholder="$250.00" class="form-control">
+                    </div>
+                    <!-- Processing Fee -->
+                    <div class="mb-3">
+                        <label for="ProcessingFee" class="form-label">Processing Fee</label>
+                        <input type="text" name="processingFee" placeholder="$595.00" class="form-control"> 
+                    </div>
+                    <!-- Credit Report -->
+                    <div class="mb-3">
+                        <label for="creditReport" class="form-label">Credit Report</label>
+                        <input type="text" name="creditReport" placeholder="$0.00" class="form-control"> 
+                    </div>
+                    <!-- Prepaids -->
+                    <!-- Prepaid Taxes -->
+                    <div class="mb-3">
+                        <label for="prepaidTaxes" class="form-label">Prepaids $280.20</label><br>
+                        <label for="prepaidTaxes" class="form-label">Prepaid Taxes ($0.00 x 1 Month)</label>
+                        <input type="text" name="prepaidTaxes" placeholder="$0.00" class="form-control"> 
+                    </div>
+                    <!-- Prepaid Insurance -->
+                    <div class="mb-3">
+                        <label for="prepaidInsurance" class="form-label">Prepaid Insurance ($0.00 x 1 Month)</label>
+                        <input type="text" name="prepaidInsurance" placeholder="$0.00" class="form-control">
+                    </div>
+                   
+
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center mb-5 mt-2">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
